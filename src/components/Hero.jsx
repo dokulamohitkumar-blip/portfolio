@@ -185,7 +185,7 @@ function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, delay: 0.15 }}
-            className="relative flex min-h-[560px] items-center justify-center"
+            className="relative hidden min-h-[560px] items-center justify-center md:flex"
           >
             {/* Large soft glow */}
             <div className="absolute h-[430px] w-[430px] rounded-full bg-cyan-100/60 blur-3xl" />

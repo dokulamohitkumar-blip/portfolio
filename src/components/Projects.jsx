@@ -229,58 +229,26 @@ ${{
 transition-all duration-300`}
               >
 
-                {/* Animation */}
-
-{/* GitHub Glass Button */}
+{/* Animation + GitHub */}
 
 <div className="relative">
 
-  {/* GitHub button */}
 
-  <a
-    href={project.github}
-    target="_blank"
-    rel="noreferrer"
-    title="View project on GitHub"
-    className="
-      absolute
-      top-3
-      right-3
-      z-20
-      flex
-      items-center
-      gap-2
-      px-3
-      py-2
-      rounded-full
-      bg-white/70
-      backdrop-blur-md
-      border
-      border-white/80
-      shadow-lg
-      text-slate-700
-      hover:bg-white
-      hover:text-slate-900
-      hover:scale-105
-      transition-all
-      duration-300
-    "
-  >
-    <FaGithub className="text-base" />
+  {/* Project Animation */}
 
-  </a>
+  <div className="hidden sm:block">
 
-  {/* Animation */}
+    {project.title === "IoT-Based Smart Parking System" ? (
+      <GateAnimation />
+    ) : project.title === "Distance Monitoring System" ? (
+      <DistanceAnimation />
+    ) : project.title === "Environmental Monitoring System" ? (
+      <ZephyrAnimation />
+    ) : (
+      <ProjectAnimation project={project} />
+    )}
 
-  {project.title === "IoT-Based Smart Parking System" ? (
-    <GateAnimation />
-  ) : project.title === "Distance Monitoring System" ? (
-    <DistanceAnimation />
-  ) : project.title === "Environmental Monitoring System" ? (
-    <ZephyrAnimation />
-  ) : (
-    <ProjectAnimation project={project} />
-  )}
+  </div>
 
 </div>
 

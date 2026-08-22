@@ -33,7 +33,7 @@ const nodes = [
 
 function ChipAnimation() {
   return (
-    <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
+    <div className="hidden md:flex relative w-full h-full items-center justify-center overflow-hidden">
 
       {/* =====================================================
           SOFT CYAN GLOW
