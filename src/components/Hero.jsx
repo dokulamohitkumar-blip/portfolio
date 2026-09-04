@@ -112,38 +112,43 @@ function Hero() {
               ))}
             </div>
 
-            {/* Buttons */}
-            <div className="mt-4 flex flex-wrap gap-3">
+{/* Buttons */}
+<div className="mt-4">
+
+  {/* Resume Buttons */}
+  <div className="flex gap-2 sm:gap-3 md:flex-wrap">
+    
+    <a
+      href="/resume.pdf"
+      target="_blank"
+      rel="noreferrer"
+      className="group flex flex-1 items-center justify-center gap-2 rounded-xl bg-slate-950 px-3 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-300 transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-600 md:flex-none md:gap-3 md:px-6 md:text-base"
+    >
+      <FaEye className="text-sm" />
+      View Resume
+    </a>
+
+    {/* Download Resume */}
+    <a
+      href="/resume.pdf"
+      download="Mohit_Kumar_Resume.pdf"
+className="group flex flex-1 items-center justify-center gap-3 rounded-xl border border-slate-300 bg-white px-3 py-3 text-sm font-semibold text-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-600 md:flex-none md:gap-3 md:px-6 md:text-base"    >
+      <FaDownload className="text-sm" />
+      Download Resume
+    </a>
+
+  </div>
+
+  {/* View Projects */}
   <a
-    href="/resume.pdf"
-    target="_blank"
-    rel="noreferrer"
-    className="group flex items-center gap-3 rounded-xl bg-slate-950 px-6 py-4 font-semibold text-white shadow-lg shadow-slate-300 transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-600"
+    href="#projects"
+    className="group mt-2 flex w-fit items-center gap-3 rounded-xl border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-600 md:mt-3 md:px-7"
   >
-    <FaEye className="text-sm" />
-    View Resume
+    View Projects
+    <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
   </a>
 
-  {/* Download Resume */}
-  <a
-    href="/resume.pdf"
-    download="Mohit_Kumar_Resume.pdf"
-    className="group flex items-center gap-3 rounded-xl border border-slate-300 bg-white px-6 py-4 font-semibold text-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-600"
-  >
-    <FaDownload className="text-sm" />
-    Download Resume
-  </a>
-
-              <a
-                href="#projects"
-                className="group flex items-center gap-3 rounded-xl border border-slate-300 bg-white px-7 py-4 font-semibold text-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-600"
-              >
-                View Projects
-
-                <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-              </a>
-            </div>
-
+</div>
             {/* Social links */}
             <div className="mt-4 flex items-center gap-4">
               <a

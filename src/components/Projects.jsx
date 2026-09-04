@@ -221,11 +221,14 @@ function Projects() {
                 whileHover={{
                   y: -8,
                 }}
-                className={`group bg-white
+className={`group bg-white
+w-full
+min-w-0
 rounded-2xl
 border border-slate-200
 p-6
 shadow-sm
+
 hover:shadow-2xl
 ${{
   cyan: "hover:border-cyan-300",
@@ -261,9 +264,36 @@ transition-all duration-300`}
 
 {/* Mobile animation */}
 
-<div className="block md:hidden">
+<div className={`block md:hidden overflow-visible rounded-xl ${
+  project.title === "Industry Parameters Monitoring 4.0"
+? "h-[120px]"
+: "h-[150px]"
+}`}>
 
-  <MobileProjectAnimation project={project} />
+<div
+className={`origin-top-left w-[540px] ${
+  project.title === "Industry Parameters Monitoring 4.0"
+    ? "scale-[0.54]"
+    : project.title === "IoT-Based Smart Parking System"
+    ? "scale-[0.55]"
+    : project.title === "Distance Monitoring System"
+    ? "scale-[0.55]"
+    : "scale-[0.55]"
+    
+}`}
+>
+
+    {project.title === "IoT-Based Smart Parking System" ? (
+      <GateAnimation />
+    ) : project.title === "Distance Monitoring System" ? (
+      <DistanceAnimation />
+    ) : project.title === "Environmental Monitoring System" ? (
+      <ZephyrAnimation />
+    ) : (
+      <ProjectAnimation project={project} />
+    )}
+
+  </div>
 
 </div>
 
@@ -271,9 +301,9 @@ transition-all duration-300`}
 
                 {/* Project header */}
 
-                <div className="flex items-start justify-between mt-7">
+                <div className="flex flex-col gap-3 mt-7 md:flex-row md:items-start md:justify-between md:gap-0">
 
-                  <div>
+<div className="min-w-0 flex-1">
 
 <p
   className={`text-sm font-bold uppercase tracking-wider ${
