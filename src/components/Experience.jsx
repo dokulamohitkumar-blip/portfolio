@@ -53,11 +53,12 @@ function Experience() {
             whileHover={{ y: -6 }}
             className="
               group
+              md:col-span-2
               bg-white
               border
               border-slate-200
               rounded-2xl
-              p-8
+              p-5 md:p-6
               shadow-sm
               hover:shadow-xl
               hover:border-cyan-300
@@ -105,7 +106,7 @@ function Experience() {
             </div>
 
 
-            <p className="mt-7 text-sm font-semibold text-cyan-500 uppercase tracking-wider">
+            <p className="mt-5 text-sm font-semibold text-cyan-500 uppercase tracking-wider">
               Internship
             </p>
 
@@ -117,7 +118,7 @@ function Experience() {
               Telecom Internship
             </h4>
 
-            <p className="mt-5 text-slate-500 leading-7">
+            <p className="mt-4 text-slate-500 leading-7">
               Completed a two-week internship in the telecommunications
               domain, gaining practical exposure to telecom engineering
               and understanding the working environment of a
@@ -125,9 +126,9 @@ function Experience() {
             </p>
 
 
-            <div className="
-              mt-6
-              pt-5
+<div className="
+  mt-4
+  pt-4
               border-t
               border-slate-100
             ">
@@ -150,124 +151,6 @@ function Experience() {
 
           </motion.div>
 
-
-
-          {/* ================= PHYTEC ================= */}
-
-          <motion.div
-            initial={{ opacity: 0, y: 35 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-            whileHover={{ y: -6 }}
-            className="
-              group
-              bg-white
-              border
-              border-slate-200
-              rounded-2xl
-              p-8
-              shadow-sm
-              hover:shadow-xl
-              hover:border-cyan-300
-              transition-all
-              duration-300
-            "
-          >
-
-            <div className="flex items-start justify-between">
-
-              <div className="
-                w-14
-                h-14
-                rounded-xl
-                bg-cyan-50
-                border
-                border-cyan-100
-                flex
-                items-center
-                justify-center
-                text-cyan-500
-                text-xl
-                group-hover:bg-cyan-500
-                group-hover:text-white
-                transition-all
-                duration-300
-              ">
-                <FaMicrochip />
-              </div>
-
-              <span className="
-                px-3
-                py-1.5
-                rounded-full
-                bg-slate-50
-                border
-                border-slate-200
-                text-xs
-                font-semibold
-                text-slate-500
-              ">
-                Training
-              </span>
-
-            </div>
-
-
-            <p className="mt-7 text-sm font-semibold text-cyan-500 uppercase tracking-wider">
-              Embedded Systems
-            </p>
-
-            <h3 className="text-2xl font-bold text-slate-900 mt-2">
-              Phytec
-            </h3>
-
-            <h4 className="text-base font-semibold text-slate-600 mt-1">
-              Embedded Systems Training
-            </h4>
-
-            <p className="mt-5 text-slate-500 leading-7">
-              Hands-on training focused on embedded systems development,
-              working with microcontrollers, hardware peripherals,
-              communication interfaces, Linux and real-time embedded
-              concepts.
-            </p>
-
-
-            <div className="mt-6 pt-5 border-t border-slate-100">
-
-              <div className="flex flex-wrap gap-2">
-
-                {[
-                  "Microcontrollers",
-                  "Peripherals",
-                  "Linux",
-                  "RTOS",
-                ].map((item) => (
-
-                  <span
-                    key={item}
-                    className="
-                      px-3
-                      py-1.5
-                      rounded-full
-                      bg-slate-50
-                      border
-                      border-slate-200
-                      text-sm
-                      text-slate-600
-                    "
-                  >
-                    {item}
-                  </span>
-
-                ))}
-
-              </div>
-
-            </div>
-
-          </motion.div>
 
         </div>
                 {/* ================= CERTIFICATES ================= */}
@@ -304,6 +187,12 @@ function Experience() {
           <div className="grid md:grid-cols-2 gap-8">
 
             {/* NPTEL - Verilog */}
+            <a
+  href="https://nptel.ac.in/noc/E_Certificate/NPTEL25CS25S66030127704301111"
+  target="_blank"
+  rel="noreferrer"
+  className="block"
+>
 
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -370,9 +259,16 @@ function Experience() {
               </p>
 
             </motion.div>
+            </a>
 
 
             {/* NPTEL - Microsensors */}
+                        <a
+  href="https://nptel.ac.in/noc/E_Certificate/NPTEL25CS25S66030127704301111"
+  target="_blank"
+  rel="noreferrer"
+  className="block"
+>
 
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -439,6 +335,7 @@ function Experience() {
               </p>
 
             </motion.div>
+            </a>
 
           </div>
 

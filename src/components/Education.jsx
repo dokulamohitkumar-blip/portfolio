@@ -98,7 +98,7 @@ function Education() {
                 }}
                 className="group relative bg-white rounded-2xl
                 border border-slate-200
-                p-7
+                p-5 md:p-7
                 shadow-sm
                 hover:shadow-xl
                 hover:border-cyan-300

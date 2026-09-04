@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import {
   FaIndustry,
   FaCar,
@@ -8,9 +9,11 @@ import {
   FaWifi,
   FaThermometerHalf,
   FaGithub,
+FaEye,
   FaTint,
 } from "react-icons/fa";
 import ProjectAnimation from "./ProjectAnimation";
+import MobileProjectAnimation from "./MobileProjectAnimation";
 import GateAnimation from "./GateAnimation";
 import DistanceAnimation from "./DistanceAnimation";
 import ZephyrAnimation from "./ZephyrAnimation";
@@ -48,10 +51,12 @@ const projects = [
     ],
   },
 
-  {
-    title: "IoT-Based Smart Parking System",
-    type: "IoT • Automation",
-      github: "https://github.com/dokulamohitkumar-blip/IoT-Based-Smart-Parking-System",
+{
+  title: "IoT-Based Smart Parking System",
+  type: "IoT • Automation",
+  github: "https://github.com/dokulamohitkumar-blip/IoT-Based-Smart-Parking-System",
+  video:
+    "https://res.cloudinary.com/vriw1jo5/video/upload/v1788491569/VID20260705180858_2.mp4",
 
 
     description:
@@ -141,6 +146,8 @@ const projects = [
 ];
 
 function Projects() {
+  const [selectedVideo, setSelectedVideo] = useState(null);
+
   return (
     <section
       id="projects"
@@ -235,20 +242,30 @@ transition-all duration-300`}
 
 
   {/* Project Animation */}
+{/* Desktop animation */}
 
-  <div className="hidden sm:block">
+<div className="relative hidden md:block">
 
-    {project.title === "IoT-Based Smart Parking System" ? (
-      <GateAnimation />
-    ) : project.title === "Distance Monitoring System" ? (
-      <DistanceAnimation />
-    ) : project.title === "Environmental Monitoring System" ? (
-      <ZephyrAnimation />
-    ) : (
-      <ProjectAnimation project={project} />
-    )}
+  {project.title === "IoT-Based Smart Parking System" ? (
+    <GateAnimation />
+  ) : project.title === "Distance Monitoring System" ? (
+    <DistanceAnimation />
+  ) : project.title === "Environmental Monitoring System" ? (
+    <ZephyrAnimation />
+  ) : (
+    <ProjectAnimation project={project} />
+  )}
 
-  </div>
+</div>
+
+
+{/* Mobile animation */}
+
+<div className="block md:hidden">
+
+  <MobileProjectAnimation project={project} />
+
+</div>
 
 </div>
 
@@ -278,6 +295,32 @@ transition-all duration-300`}
                   </div>
 
 <div className="flex items-center gap-3">
+  {/* View Video */}
+
+{project.video && (
+  <button
+    type="button"
+    onClick={() => setSelectedVideo(project.video)}
+    title="View project demo"
+    className="
+      w-12
+      h-12
+      rounded-xl
+      bg-slate-50
+      border border-slate-200
+      flex items-center
+      justify-center
+      text-slate-700
+      text-xl
+      hover:bg-violet-500
+      hover:text-white
+      hover:border-violet-500
+      transition-all duration-300
+    "
+  >
+    <FaEye />
+  </button>
+)}
 
   {/* Project Icon */}
 
@@ -373,6 +416,78 @@ ${
         </div>
 
       </div>
+
+      {/* Video Modal */}
+
+      {selectedVideo && (
+        <div
+          className="
+            fixed
+            inset-0
+            z-50
+            bg-black/80
+            backdrop-blur-sm
+            flex
+            items-center
+            justify-center
+            p-4
+          "
+          onClick={() => setSelectedVideo(null)}
+        >
+          <div
+            className="
+              relative
+              w-full
+              max-w-5xl
+              bg-slate-900
+              rounded-2xl
+              overflow-hidden
+              shadow-2xl
+            "
+            onClick={(e) => e.stopPropagation()}
+          >
+
+            {/* Close Button */}
+
+            <button
+              type="button"
+              onClick={() => setSelectedVideo(null)}
+              className="
+                absolute
+                top-3
+                right-3
+                z-10
+                w-10
+                h-10
+                rounded-full
+                bg-black/60
+                text-white
+                flex
+                items-center
+                justify-center
+                text-xl
+                hover:bg-black/90
+                transition
+              "
+              title="Close video"
+            >
+              ×
+            </button>
+
+            {/* Video */}
+
+            <video
+              src={selectedVideo}
+              controls
+              autoPlay
+              playsInline
+              className="w-full h-auto"
+            />
+            
+          </div>
+        </div>
+      )}
+
     </section>
   );
 }

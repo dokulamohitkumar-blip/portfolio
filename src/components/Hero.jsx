@@ -47,7 +47,7 @@ function Hero() {
       <div className="absolute left-[-180px] bottom-[-200px] h-[500px] w-[500px] rounded-full bg-blue-50 blur-3xl" />
 
       {/* Main content */}
-      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-80px)] max-w-7xl items-center px-6 py-16 lg:px-8">
+      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-80px)] max-w-7xl items-center px-6 py-6 lg:px-8">
         <div className="grid w-full items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
 
           {/* =====================================================
@@ -113,7 +113,7 @@ function Hero() {
             </div>
 
             {/* Buttons */}
-            <div className="mt-9 flex flex-wrap gap-3">
+            <div className="mt-4 flex flex-wrap gap-3">
   <a
     href="/resume.pdf"
     target="_blank"
@@ -145,7 +145,7 @@ function Hero() {
             </div>
 
             {/* Social links */}
-            <div className="mt-9 flex items-center gap-4">
+            <div className="mt-4 flex items-center gap-4">
               <a
                 href="#"
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-xl text-slate-500 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan-300 hover:text-cyan-600 hover:shadow-md"
