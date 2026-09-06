@@ -271,7 +271,7 @@ transition-all duration-300`}
 }`}>
 
 <div
-className={`origin-top-left w-[450px] ${
+className={`origin-top-left w-[540px] ${
   project.title === "Industry Parameters Monitoring 4.0"
     ? "scale-[0.59]"
     : project.title === "IoT-Based Smart Parking System"
