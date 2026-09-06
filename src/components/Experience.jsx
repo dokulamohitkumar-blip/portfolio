@@ -118,7 +118,7 @@ function Experience() {
               Telecom Internship
             </h4>
 
-            <p className="mt-4 text-slate-500 leading-7">
+            <p className="mt-4 text-sm md:text-base text-slate-500 leading-7">
               Completed a two-week internship in the telecommunications
               domain, gaining practical exposure to telecom engineering
               and understanding the working environment of a
