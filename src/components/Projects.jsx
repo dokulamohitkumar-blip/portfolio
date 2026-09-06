@@ -267,7 +267,7 @@ transition-all duration-300`}
 <div className={`block md:hidden overflow-hidden rounded-xl ${
     project.title === "Industry Parameters Monitoring 4.0"
 ? "h-[150px]"
-: "h-[180px]"
+: "h-[150px]"
 }`}>
 
 <div
@@ -275,9 +275,9 @@ className={`origin-top-left w-[540px] ${
   project.title === "Industry Parameters Monitoring 4.0"
     ? "scale-[0.54]"
     : project.title === "IoT-Based Smart Parking System"
-    ? "scale-[0.55]"
+    ? "scale-[0.45]"
     : project.title === "Distance Monitoring System"
-    ? "scale-[0.54]"
+    ? "scale-[0.45]"
     : "scale-[0.45]"
     
 }`}
