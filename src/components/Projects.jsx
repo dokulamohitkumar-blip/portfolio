@@ -266,14 +266,14 @@ transition-all duration-300`}
 
 <div className={`block md:hidden overflow-visible rounded-xl ${
   project.title === "Industry Parameters Monitoring 4.0"
-    ? "h-[140px]"
+    ? "h-[110px]"
     : "h-[110px]"
 }`}>
 
 <div
 className={`origin-top-left w-[540px] ${
   project.title === "Industry Parameters Monitoring 4.0"
-    ? "scale-[0.50]"
+    ? "scale-[0.45]"
     : project.title === "IoT-Based Smart Parking System"
     ? "scale-[0.45]"
     : project.title === "Distance Monitoring System"
