@@ -264,8 +264,8 @@ transition-all duration-300`}
 
 {/* Mobile animation */}
 
-<div className={`block md:hidden overflow-visible rounded-xl ${
-  project.title === "Industry Parameters Monitoring 4.0"
+<div className={`block md:hidden overflow-hidden rounded-xl ${
+    project.title === "Industry Parameters Monitoring 4.0"
 ? "h-[150px]"
 : "h-[150px]"
 }`}>
