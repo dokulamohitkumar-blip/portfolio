@@ -266,7 +266,7 @@ transition-all duration-300`}
 
 <div className={`block md:hidden overflow-visible rounded-xl ${
   project.title === "Industry Parameters Monitoring 4.0"
-    ? "h-[110px]"
+    ? "h-[150px]"
     : "h-[110px]"
 }`}>
 
