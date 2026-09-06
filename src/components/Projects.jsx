@@ -278,7 +278,7 @@ className={`origin-top-left w-[540px] ${
     ? "scale-[0.55]"
     : project.title === "Distance Monitoring System"
     ? "scale-[0.54]"
-    : "scale-[0.50]"
+    : "scale-[0.45]"
     
 }`}
 >
