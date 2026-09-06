@@ -273,12 +273,12 @@ transition-all duration-300`}
 <div
 className={`origin-top-left w-[540px] ${
   project.title === "Industry Parameters Monitoring 4.0"
-    ? "scale-[0.59]"
+    ? "scale-[0.54]"
     : project.title === "IoT-Based Smart Parking System"
-    ? "scale-[0.58]"
+    ? "scale-[0.55]"
     : project.title === "Distance Monitoring System"
-    ? "scale-[0.59]"
-    : "scale-[0.55]"
+    ? "scale-[0.54]"
+    : "scale-[0.54]"
     
 }`}
 >
