@@ -152,14 +152,18 @@ className="group flex flex-1 items-center justify-center gap-3 rounded-xl border
             {/* Social links */}
             <div className="mt-4 flex items-center gap-4">
               <a
-                href="#"
+                 href="https://github.com/dokulamohitkumar-blip"
+  target="_blank"
+  rel="noreferrer"
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-xl text-slate-500 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan-300 hover:text-cyan-600 hover:shadow-md"
               >
                 <FaGithub />
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/in/mohitkumar-dokula-b13619296/"
+target="_blank"
+rel="noreferrer"
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-xl text-slate-500 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan-300 hover:text-cyan-600 hover:shadow-md"
               >
                 <FaLinkedin />
