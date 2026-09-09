@@ -21,9 +21,12 @@ import ZephyrAnimation from "./ZephyrAnimation";
 const projects = [
   {
     title: "Industry Parameters Monitoring 4.0",
-    type: "IoT • Industrial Monitoring",
+type: "IoT • Industrial Monitoring",
 
-      github: "https://github.com/dokulamohitkumar-blip/Industry-Parameters-Monitoring-4.0",
+github: "https://github.com/dokulamohitkumar-blip/Industry-Parameters-Monitoring-4.0",
+
+video:
+  "https://res.cloudinary.com/vriw1jo5/video/upload/v1788971728/Video.mp4",
 
 
     description:
